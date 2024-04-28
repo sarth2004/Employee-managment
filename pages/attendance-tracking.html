@@ -38,7 +38,7 @@
     let employeeData = JSON.parse(localStorage.getItem('employeeData')) || [];
 
     function displayEmployees() {
-        // Sort employees by salary in descending order
+        
         employeeData.sort((a, b) => b.salary - a.salary);
 
         let html = '';
@@ -52,6 +52,6 @@
 });
 
 </script>
-     
+     <script src="../script.js"></script>
 </body>
 </html>

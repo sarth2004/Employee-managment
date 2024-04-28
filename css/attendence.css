@@ -13,7 +13,10 @@
     height: 4.3rem; 
     margin-left: 20px;
   }
-  
+  body
+  {
+      background-color: #fefae7;
+  }
   .navbar-links ul {
     list-style-type: none;
     padding: 0;

@@ -9,7 +9,10 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-  
+  body
+  {
+      background-color: #fefae7;
+  }
   .navbar-logo img {
     height: 4.3rem; 
     margin-left: 20px;
