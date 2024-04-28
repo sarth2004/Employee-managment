@@ -1,0 +1,91 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .navbar-logo img {
+    height: 4.3rem; 
+    margin-left: 20px;
+  }
+  
+  .navbar-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .navbar-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+  }
+  
+  .navbar-button .btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+  
+  .navbar-button .btn:hover {
+    background-color: #0056b3;
+  }
+  
+body
+{
+    background-color: aliceblue;
+}
+    
+.container
+{
+    max-width: fit-content;
+    
+    justify-content: center;
+}
+.navbar
+{
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.card-wrapper {
+    background: #ffffff;
+}
+img, .card-wrap, .card-wrapper, .video-wrapper, .mbr-figure iframe, .google-map iframe, .slide-content, .plan, .card, .item-wrapper {
+    border-radius: 2rem !important;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}

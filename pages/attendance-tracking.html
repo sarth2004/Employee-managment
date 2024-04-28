@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance tracking</title>
+    <link rel="stylesheet" href="../css/attendence.css">
+   <link rel="stylesheet" href="https://r.mobirisesite.com/397907/assets/theme/css/style.css?rnd=1713549633240">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap&display=swap"></noscript>
+  
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpeg" alt="company logo">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="../pages/employee.html">Employee Directory</a></li>
+            <li><a href="../pages/attendance-tracking.html">Attendance Tracking</a></li>
+        </ul>
+    </div>
+    <div class="navbar-button">
+        <a href="../pages/login.html" class="btn">Login</a>
+    </div>
+</nav>
+      
+      <h1 class="text-center">Employee attendance</h1>
+     
+</form>
+<div id="productList" style="margin-top: 20px; border: 1px solid #ccc; padding: 20px; border-radius: 5px;"></div>
+</div>
+<script>document.addEventListener("DOMContentLoaded", function() {
+    const employeeTableBody = document.getElementById('employeeTableBody');
+    let employeeData = JSON.parse(localStorage.getItem('employeeData')) || [];
+
+    function displayEmployees() {
+        // Sort employees by salary in descending order
+        employeeData.sort((a, b) => b.salary - a.salary);
+
+        let html = '';
+        employeeData.forEach(function(employee) {
+            html += `<tr><td>${employee.name}</td><td>${employee.salary}</td></tr>`;
+        });
+        employeeTableBody.innerHTML = html;
+    }
+
+    displayEmployees();
+});
+
+</script>
+     
+</body>
+</html>

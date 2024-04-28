@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulb On/Off Toggler</title>
+  <style>
+    #bulb-img {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bulb On/Off Toggler</h2>
+  <button id="toggle-btn">Toggle Bulb</button>
+  <img id="bulb-img" src="bulb_off.png" alt="Bulb Off">
+
+  <script>
+    document.getElementById('toggle-btn').addEventListener('click', function() {
+      var bulbImg = document.getElementById('bulb-img');
+      var currentSrc = bulbImg.getAttribute('src');
+      
+      if (currentSrc === 'bulb_off.png') {
+        bulbImg.setAttribute('src', 'bulb_on.png');
+      } else {
+        bulbImg.setAttribute('src', 'bulb_off.png');
+      }
+    });
+  </script>
+</body>
+</html>

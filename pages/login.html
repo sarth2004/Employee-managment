@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap&display=swap"></noscript>
+  
+  <style>
+   
+</style>
+</head>
+
+  
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">
+        <a href="../index.html">
+            <img src="../images/logo.jpeg" alt="company logo">
+        </a>
+    </div>
+    <div class="navbar-links">
+        <ul>
+            <li><a href="../pages/employee.html">Employee Directory</a></li>
+            <li><a href="../pages/attendance-tracking.html">Attendance Tracking</a></li>
+        </ul>
+    </div>
+    <div class="navbar-button">
+        <a href="../pages/login.html" class="btn">Login</a>
+    </div>
+</nav>
+          <br><br><br><br><br>
+          <div class="container-1">
+            <form-1 id="login-form">
+                <h2 class="form-title">Login</h2>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+                <div class="form-toggle">
+                    Don't have an account? <a href="#" onclick="toggleForm('signup-form')">Sign Up</a>
+                </div>
+            </form-1>
+    
+            <form-1 id="signup-form" style="display: none;">
+                <h2 class="form-title">Sign Up</h2>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input type="submit" value="Sign Up">
+                <div class="form-toggle">
+                    Already have an account? <a href="#" onclick="toggleForm('login-form')">Login</a>
+                </div>
+            </form-1>
+        </div>
+    
+        <script>
+            function toggleForm(formId) {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('signup-form').style.display = 'none';
+
+            document.getElementById(formId).style.display = 'block';
+        }
+
+        function saveCredentials(formType) {
+            if (formType === 'login') {
+                const username = document.getElementById('login-username').value;
+                const password = document.getElementById('login-password').value;
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', password);
+            } else if (formType === 'signup') {
+                const username = document.getElementById('signup-username').value;
+                const password = document.getElementById('signup-password').value;
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', password);
+            }
+            return true;
+        }
+        </script>
+          
+    
+</body>
+
+
+
+</html>

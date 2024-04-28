@@ -1,0 +1,138 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.navbar-logo img {
+  height: 4.3rem; 
+  margin-left: 20px;
+}
+
+.navbar-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-links ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar-links ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.navbar-button .btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.navbar-button .btn:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+body
+{
+  background-color: #fefae7;
+}
+.left-section, .right-section {
+  width: 50%;
+}
+
+.right-section img {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+  object-fit:cover ;
+}
+.home-title{
+  text-align: center;
+  font-weight: 400
+}
+.home-text {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-family: Helvetica, Arial, sans-serif;
+  
+}
+.feature-title{
+  display: flex;
+  justify-content: center;
+}
+.feature-container{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #fefae7;
+  margin-top: 100px;
+  padding-top: 40px;
+  
+  padding-bottom: 40px;
+  background-color: white;
+  border-radius: 20px;
+}
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
